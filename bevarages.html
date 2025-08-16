@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Crusto Pizza</title>
+
+  <!-- Bootstrap CSS (for layout, navbar, buttons, carousel) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons (cart, calendar, etc.) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Font Awesome (for social icons like Facebook, Insta, etc.) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Google Fonts (Montserrat + Great Vibes for branding) -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+  <!-- Your custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ====== Header/Navbar Start ====== -->
+<header class="navbar">
+  <div class="nav-logo">
+    <div class="logo-circle">
+      <img src="picsfolder/logo.png" alt="Crusto Logo" class="logo-img">
+    </div>
+    <span class="brand-name"><span class="crus-bold">Cruz</span><span class="to-script">to</span></span>
+  </div>
+  <nav class="nav-center">
+    <ul class="nav-links">
+      <li><a href="index1.html" class="nav-item">Home</a></li>
+
+         <li class="dropdown">
+  <a href="menu.html" class="nav-item dropdown-toggle">Menu</a>
+  <ul class="dropdown-menu">
+    <li><a href="clasicpizza.html">Classic Pizzas</a></li>
+    <li><a href="Signaturepizza.html">Signature Pizzas</a></li>
+    <li><a href="stuffed crust pizza.html">Stuffed Crust Pizzas</a></li>
+    <li><a href="sides.html">Sides</a></li>
+    <li><a href="bevarages.html">Beverages</a></li>
+  </ul>
+</li>
+
+      <li><a href="feedback.html" class="nav-item">Feedback</a></li>
+      <li><a href="Franchising.html" class="nav-item">Franchising</a></li>
+      <li><a href="aboutus.html" class="nav-item">About Us</a></li>
+      <li><a href="location.html" class="nav-item">Location</a></li>
+      <li><a href="contact.html" class="nav-item">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<!-- ====== Header/Navbar End ====== -->
+
+
+<section id="beverages" style="background:#111; color:white; padding:60px 20px; scroll-margin-top:100px;">
+  <div class="container">
+    <h2 class="section-title text-center" style="color:#ff4c29; font-size:2.5rem; margin-bottom:40px;">Beverages</h2>
+
+    <div class="row g-4 justify-content-center">
+
+<!-- Shakes -->
+      <div class="col-12">
+        <h4 class="text-warning text-center mb-4">Shakes</h4>
+      </div>
+
+      <!-- Chocolate shake -->
+      <div class="col-md-4">
+        <div class="pizza-card card text-white h-100">
+          <img src="picsfolder/chocolate shake.jpg" class="card-img-top mb-3" alt="Chocolate shake">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <div>
+              <h4 class="card-title">Chocolate shake</h4>
+              <p class="card-text">Chilled chocalate flavor shake to refresh your cravings.</p>
+              <p class="fw-bold">Price: Rs. 120</p>
+            </div>
+            <button class="btn btn-outline-light mt-3 add-to-cart"
+              data-bs-toggle="modal" data-bs-target="#addToCartModal">
+        Add to Cart
+      </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mango shake -->
+      <div class="col-md-4">
+        <div class="pizza-card card text-white h-100">
+          <img src="picsfolder/mangoshake.jpg" class="card-img-top mb-3" alt="Mango shake">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <div>
+              <h4 class="card-title">Mango shake</h4>
+              <p class="card-text">Crisp Mango shake, served chilled.</p>
+              <p class="fw-bold">Price: Rs. 120</p>
+            </div>
+            <button class="btn btn-outline-light mt-3 add-to-cart"
+              data-bs-toggle="modal" data-bs-target="#addToCartModal">
+        Add to Cart
+      </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stawberry Shake -->
+      <div class="col-md-4">
+        <div class="pizza-card card text-white h-100">
+          <img src="picsfolder/strawberry shake.jpg" class="card-img-top mb-3" alt="Strawberry shake">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <div>
+              <h4 class="card-title">Strawberry shake</h4>
+              <p class="card-text">Sweet and fizzy Strawberry shake, cool and tasty.</p>
+              <p class="fw-bold">Price: Rs. 120</p>
+            </div>
+           <button class="btn btn-outline-light mt-3 add-to-cart"
+              data-bs-toggle="modal" data-bs-target="#addToCartModal">
+        Add to Cart
+      </button>
+          </div>
+        </div>
+      </div>
+
+
+      <!--Fresh juices -->
+      <div class="col-12">
+        <h4 class="text-warning text-center mb-4">Fresh Jices</h4>
+      </div>
+
+      <!-- Orange -->
+      <div class="col-md-4">
+        <div class="pizza-card card text-white h-100">
+          <img src="picsfolder/orangej.jpg" class="card-img-top mb-3" alt="Orange juice">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <div>
+              <h4 class="card-title">Orange juice</h4>
+              <p class="card-text">Chilled Orange juice to refresh your cravings.</p>
+              <p class="fw-bold">Price: Rs. 120</p>
+            </div>
+            <button class="btn btn-outline-light mt-3 add-to-cart"
+              data-bs-toggle="modal" data-bs-target="#addToCartModal">
+        Add to Cart
+      </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cherry -->
+      <div class="col-md-4">
+        <div class="pizza-card card text-white h-100">
+          <img src="picsfolder/CHERY.webp" class="card-img-top mb-3" alt="Cherry">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <div>
+              <h4 class="card-title">Chery juice</h4>
+              <p class="card-text">Crisp Falsa flavor, served chilled.</p>
+              <p class="fw-bold">Price: Rs. 120</p>
+            </div>
+            <button class="btn btn-outline-light mt-3 add-to-cart"
+              data-bs-toggle="modal" data-bs-target="#addToCartModal">
+        Add to Cart
+      </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Watermelon -->
+      <div class="col-md-4">
+        <div class="pizza-card card text-white h-100">
+          <img src="picsfolder/waternmelon.webp" class="card-img-top mb-3" alt="Watermelon">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <div>
+              <h4 class="card-title">Watermelon</h4>
+              <p class="card-text">Sweet and fizzy Watermelon drink, cool and tasty.</p>
+              <p class="fw-bold">Price: Rs. 120</p>
+            </div>
+           <button class="btn btn-outline-light mt-3 add-to-cart"
+              data-bs-toggle="modal" data-bs-target="#addToCartModal">
+        Add to Cart
+      </button>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- Soft Drinks -->
+      <div class="col-12">
+        <h4 class="text-warning text-center mb-4">Soft Drinks</h4>
+      </div>
+
+      <!-- Cola Next -->
+      <div class="col-md-4">
+        <div class="pizza-card card text-white h-100">
+          <img src="picsfolder/colanext.webp" class="card-img-top mb-3" alt="Colanext">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <div>
+              <h4 class="card-title">Cola Next</h4>
+              <p class="card-text">Chilled Cola to refresh your cravings.</p>
+              <p class="fw-bold">Price: Rs. 120</p>
+            </div>
+            <button class="btn btn-outline-light mt-3 add-to-cart"
+              data-bs-toggle="modal" data-bs-target="#addToCartModal">
+        Add to Cart
+      </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fizzup -->
+      <div class="col-md-4">
+        <div class="pizza-card card text-white h-100">
+          <img src="picsfolder/next.webp" class="card-img-top mb-3" alt="Fizzup">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <div>
+              <h4 class="card-title">Fizzup</h4>
+              <p class="card-text">Crisp lemon-lime flavor, served chilled.</p>
+              <p class="fw-bold">Price: Rs. 120</p>
+            </div>
+          <button class="btn btn-outline-light mt-3 add-to-cart"
+              data-bs-toggle="modal" data-bs-target="#addToCartModal">
+        Add to Cart
+      </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Rango -->
+      <div class="col-md-4">
+        <div class="pizza-card card text-white h-100">
+          <img src="picsfolder/orange.webp" class="card-img-top mb-3" alt="Rango">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <div>
+              <h4 class="card-title">Rango</h4>
+              <p class="card-text">Sweet and fizzy orange drink, cool and tasty.</p>
+              <p class="fw-bold">Price: Rs. 120</p>
+            </div>
+            <button class="btn btn-outline-light mt-3 add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pakola -->
+      <div class="col-md-4">
+        <div class="pizza-card card text-white h-100">
+          <img src="picsfolder/pakola.jpg" class="card-img-top mb-3" alt="Pakola">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <div>
+              <h4 class="card-title">Pakola</h4>
+              <p class="card-text">Popular fizzy drink with bold green flavor.</p>
+              <p class="fw-bold">Price: Rs. 120</p>
+            </div>
+            <button class="btn btn-outline-light mt-3 add-to-cart"
+              data-bs-toggle="modal" data-bs-target="#addToCartModal">
+        Add to Cart
+      </button>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Mineral Water -->
+      <div class="col-md-4">
+        <div class="pizza-card card text-white h-100">
+          <img src="picsfolder/pakolawater.webp" class="card-img-top mb-3" alt="Mineral Water">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <div>
+              <h4 class="card-title">Mineral Water</h4>
+              <p class="card-text">Pure bottled water — available in multiple sizes:</p>
+              <ul class="mb-2">
+                <li>Small Bottle – Rs. 50</li>
+                <li>Medium Bottle – Rs. 80</li>
+                <li>Large Bottle – Rs. 120</li>
+              </ul>
+            </div>
+            <button class="btn btn-outline-light mt-3 add-to-cart"
+              data-bs-toggle="modal" data-bs-target="#addToCartModal">
+        Add to Cart
+      </button>
+          </div>
+        </div>
+      </div>
+
+
+    
+
+
+
+<!-- ======= Footer Start ======= -->
+<footer class="site-footer">
+  <div class="footer-container">
+
+    <!-- Column 1: Contact Info -->
+    <div class="footer-column">
+      <h4>Contact Us</h4>
+      <p><strong>Phone:</strong> +92 300 1234567</p>
+      <p><strong>Email:</strong> info@crusto.com</p>
+      <p><strong>Location:</strong> Gulshan Block 3, Karachi</p>
+    </div>
+
+    <!-- Column 2: Opening Hours -->
+    <div class="footer-column">
+      <h4>Opening Hours</h4>
+      <p>Mon - Fri: 12:00 PM - 11:00 PM</p>
+      <p>Sat - Sun: 1:00 PM - 12:00 AM</p>
+    </div>
+
+    <!-- Column 3: Quick Links -->
+    <div class="footer-column">
+      <h4>Quick Links</h4>
+      <ul class="footer-links">
+        <li><a href="index1.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="Franchising.html">Franchising</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="location.html">location</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 4: Social Media -->
+    <div class="footer-column">
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/yourpage" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/pizza_crusto/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com/yourhandle" target="_blank"><i class="fab fa-x-twitter"></i></a>
+        <a href="https://wa.me/923001234567" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.youtube.com/@yourchannel" target="_blank"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom bar -->
+  <div class="footer-bottom">
+    <p>© 2025 Crusto Pizza. All rights reserved.</p>
+  </div>
+</footer>
+<!-- ======= Footer End ======= -->
+
+
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Your custom JS -->
+<script src="script.js"></script>
+
+
+
+
+<!-- Add to Cart Modal -->
+<div class="modal fade" id="addToCartModal" tabindex="-1" aria-labelledby="addToCartModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content text-white" style="background:#222;">
+      <div class="modal-header">
+        <h5 class="modal-title" id="addToCartModalLabel">Customize Your Pizza</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Pizza Sizes -->
+        <div class="mb-3">
+          <label class="form-label">Select Size:</label>
+          <div class="d-flex flex-wrap gap-3">
+            <div class="form-check">
+              <input class="form-check-input size-option" type="radio" name="size" value="Small" data-price="599" checked>
+              <label class="form-check-label">Small (Rs. 599)</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input size-option" type="radio" name="size" value="Medium" data-price="799">
+              <label class="form-check-label">Medium (Rs. 799)</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input size-option" type="radio" name="size" value="Large" data-price="999">
+              <label class="form-check-label">Large (Rs. 999)</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input size-option" type="radio" name="size" value="Extra Large" data-price="1199">
+              <label class="form-check-label">Extra Large (Rs. 1199)</label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Crust Type -->
+<div class="mb-3">
+  <label class="form-label">Select Crust:</label>
+  <div class="d-flex flex-wrap gap-3">
+    <div class="form-check">
+      <input class="form-check-input crust-option" type="radio" name="crust" value="Normal" data-price="0" checked>
+      <label class="form-check-label">Normal (Free)</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input crust-option" type="radio" name="crust" value="Thin" data-price="50">
+      <label class="form-check-label">Thin (+Rs. 50)</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input crust-option" type="radio" name="crust" value="Thick" data-price="100">
+      <label class="form-check-label">Thick (+Rs. 100)</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input crust-option" type="radio" name="crust" value="Stuffed" data-price="150">
+      <label class="form-check-label">Stuffed (+Rs. 150)</label>
+    </div>
+  </div>
+</div>
+
+
+        <!-- Quantity -->
+        <div class="mb-3">
+          <label class="form-label">Quantity:</label>
+          <div class="input-group" style="max-width:140px;">
+            <button class="btn btn-outline-light" type="button" id="decreaseQty">-</button>
+            <input type="text" class="form-control text-center bg-dark text-white" id="quantityInput" value="1" readonly>
+            <button class="btn btn-outline-light" type="button" id="increaseQty">+</button>
+          </div>
+        </div>
+
+        <!-- Add-ons -->
+        <div class="mb-3">
+          <label class="form-label">Add-ons:</label>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-check">
+                <input class="form-check-input addon" type="checkbox" value="Extra Cheese" data-price="100">
+                <label class="form-check-label">Extra Cheese (+Rs. 100)</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input addon" type="checkbox" value="Jalapeños" data-price="70">
+                <label class="form-check-label">Jalapeños (+Rs. 70)</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input addon" type="checkbox" value="Mushrooms" data-price="80">
+                <label class="form-check-label">Mushrooms (+Rs. 80)</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input addon" type="checkbox" value="Chicken" data-price="120">
+                <label class="form-check-label">Chicken (+Rs. 120)</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input addon" type="checkbox" value="Pepperoni" data-price="150">
+                <label class="form-check-label">Pepperoni (+Rs. 150)</label>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-check">
+                <input class="form-check-input addon" type="checkbox" value="Habanero Sauce" data-price="50">
+                <label class="form-check-label">Habanero Sauce (+Rs. 50)</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input addon" type="checkbox" value="Peri Peri Sauce" data-price="50">
+                <label class="form-check-label">Peri Peri Sauce (+Rs. 50)</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input addon" type="checkbox" value="Tomato Sauce" data-price="30">
+                <label class="form-check-label">Tomato Sauce (+Rs. 30)</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input addon" type="checkbox" value="Corn" data-price="60">
+                <label class="form-check-label">Corn (+Rs. 60)</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Special Instructions -->
+        <div class="mb-3">
+          <label class="form-label">Special Instructions:</label>
+          <textarea class="form-control bg-dark text-white" id="specialInstructions" rows="3" placeholder="e.g., No onions, extra spicy..."></textarea>
+        </div>
+
+       
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-light" id="confirmAddToCart">Order Now</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
